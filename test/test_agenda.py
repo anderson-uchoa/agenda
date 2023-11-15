@@ -235,7 +235,7 @@ class TestAgenda(unittest.TestCase):
                         "Deve ser possível adcionar um contato na lista de contatos se o nome ainda não existir.")
         self.assertTrue(agenda.adicionarContato(contato1),
                         "Deve ser possível adcionar um contato na lista de contatos se o nome ainda não existir.")
-        self.assertEqual(2, agenda.getQuantidadeDeFones(Identificador.TRABALHO),
+        self.assertEqual(2, agenda.getQuantidadeDeFonesPorIdentificador(Identificador.TRABALHO),
                          "Deve ser possível pesquisar pela quantidade de fones com base nos identificador pesquisado.")
 
     def testQuantidadeTotalDeTelefones(self):
@@ -256,7 +256,7 @@ class TestAgenda(unittest.TestCase):
                         "Deve ser possível adcionar um contato na lista de contatos se o nome ainda não existir.")
         self.assertTrue(agenda.adicionarContato(contato1),
                         "Deve ser possível adcionar um contato na lista de contatos se o nome ainda não existir.")
-        self.assertEqual(4, agenda.getQuantidadeDeFones(),
+        self.assertEqual(4, agenda.getQuantidadeTotalDeFones(),
                          "Deve ser possível pesquisar pela quantidade total de fones cadastrados na agenda.")
 
 

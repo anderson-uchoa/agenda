@@ -5,6 +5,7 @@ class Contato:
 
     def __init__(self, nome):
         pass
+
     def getName(self) -> str:
         return ""
 

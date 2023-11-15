@@ -31,7 +31,7 @@ if __name__ == '__main__':
     #    - Adriele [0:Claro:(77)89085-9077] [1:Tim:(63)61730-9301]
     #    - Adriele [0:Casa:(77)89085-9077] [1:Celular:(63)61730-9301]
     #    - Biatriz [0:Trabalho:(80)63810-9092]
-    quantidade = agenda.getQuantidadeDeFones(Identificador.TRABALHO)
+    quantidade = agenda.getQuantidadeDeFonesPorIdentificador(Identificador.TRABALHO)
     print("Total de telefones com o identifcador (Trabalho) é igual a " + str(quantidade))
     # Total de telefones com o identifcador (Trabalho) é igual a 2
 
@@ -52,7 +52,7 @@ if __name__ == '__main__':
     #       - Ariele [0:Trabalho:(24)62362-1925] [1:Celular:(79)98614-1326]
     #       - Biatriz [0:Trabalho:(80)63810-9092] [1:Celular:(59)67638-0967] [2:Casa:(59)67638-0967]
 
-    quantidadeTotal = agenda.getQuantidadeDeFones()
+    quantidadeTotal = agenda.getQuantidadeTotalDeFones()
     print("Total de telefones cadastrados na agenda é igual a " + quantidadeTotal)
     # "Total de telefones cadastrados na agenda é igual a 6
 

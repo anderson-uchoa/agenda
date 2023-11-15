@@ -25,10 +25,10 @@ class Agenda:
     def removerFone(self, nome:str, index: int) -> bool:
         return False
 
-    def getQuantidadeDeFones(self, identificador: Identificador) -> int:
+    def getQuantidadeDeFonesPorIdentificador(self, identificador: Identificador) -> int:
         return 0
 
-    def getQuantidadeDeFones(self) -> int:
+    def getQuantidadeTotalDeFones(self) -> int:
         return 0
 
     def pesquisar(self, expressao:str) -> list:
