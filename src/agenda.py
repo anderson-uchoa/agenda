@@ -4,6 +4,9 @@ from src.identificador import Identificador
 
 class Agenda:
 
+    def __init__(self):
+        pass
+
     def getContatos(self) -> list:
         return None
 
