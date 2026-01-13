@@ -151,7 +151,7 @@ class TestAgenda(unittest.TestCase):
                         "Deve ser possível adcionar um contato na lista de contatos se o nome ainda não existir.")
         resultadoExato = [contato1, contato2]
         resultado = agenda.pesquisar("ri")
-        self.assertEquals(resultadoExato, resultado,
+        self.assertEqual(resultadoExato, resultado,
                           "Deve ser possível encontrar contatos na lista de contatos se o padrão conrresponder a qualquer nome, identificado ou telefones")
 
     def testPesquisandoContatosPorNumeros(self):
